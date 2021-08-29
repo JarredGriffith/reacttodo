@@ -23,9 +23,20 @@ export default class App extends React.Component {
  }
 
 
+ //removing the todo. 
+ removeToDO(e) {
+  var array = [...this.state.todo]; // make a separate copy of the array
+  var index = array.indexOf(e.target.value)
+  if (index !== -1) {
+    array.splice(index, 1);
+    this.setState({people: array});
+  }
+}
+
 render(){
-  let list = this.state.todo.map(list=> {
-    return <List {...list} />
+  let list = this.state.todo.map((list,i)=> {
+    console.log(i); 
+    return <List {...list} key={i} />
   })
   return (
     <div>
