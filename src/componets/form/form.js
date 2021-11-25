@@ -11,8 +11,10 @@ export const Form = (props) => {
 
     return (
    <form onSubmit={handleSubmit}>
+        <label>To do...</label>
             <input type="text" value={todo} onChange={(c)=> setToDo(c.target.value)} />
             <br/>
+            <label>date</label>  
             <input type="date" value={doDate} onChange={(c)=> setDoDate(c.target.value)}></input>
             <br/>
             <button type="submit" onSubmit={handleSubmit}>Submit</button>
