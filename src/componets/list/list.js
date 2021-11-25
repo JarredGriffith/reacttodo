@@ -17,20 +17,7 @@ function List (props) {
             </div>
         </div>
 
-        // <li>
-        //     {props.id}
-        //     {props.toDo}
-        //     <button onClick={handleCLick}> Delete </button>
-        // </li>
     )
 }
 
 export default List
-
-{/* <div class="container">
-    <div  class="card" v-for="todo in todos">
-        <h4>{{todo.text}}</h4>
-        <p>Due Date: {{todo.date}} </p>
-        <button @click="removeTodo(todo)">Compete Todo</button>
-    </div>
-  </div> */}
